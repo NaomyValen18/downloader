@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Downloader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Media Downloader</h1>
+    <form id="downloadForm">
+      <label for="url">Enter URL:</label>
+      <input type="text" id="url" placeholder="Paste video or audio URL here..." required>
+
+      <label for="format">Select Format:</label>
+      <select id="format" required>
+        <optgroup label="Audio Formats">
+          <option value="mp3">MP3</option>
+          <option value="m4a">M4A</option>
+          <option value="wav">WAV</option>
+        </optgroup>
+        <optgroup label="Video Formats">
+          <option value="360">360p</option>
+          <option value="720">720p</option>
+          <option value="1080">1080p</option>
+        </optgroup>
+      </select>
+
+      <button type="submit">Download</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
